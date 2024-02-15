@@ -33,7 +33,7 @@ async function init() {
     await app.register(cache);
     await app.register(routes);
 
-    app.listen({ port: process.env.PORT ? parseInt(process.env.PORT) : 8080, path: "localhost" }).then(console.log);
+    app.listen({ port: process.env.PORT ? parseInt(process.env.PORT) : 8080, path: "0.0.0.0" }).then(console.log);
 }
 
 init();
